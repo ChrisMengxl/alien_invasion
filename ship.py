@@ -2,7 +2,7 @@
 # @Author: ChrisMengxl
 # @Date:   2021-02-08 01:09:52
 # @Last Modified by:   ChrisMengxl
-# @Last Modified time: 2021-02-08 12:27:31
+# @Last Modified time: 2021-02-08 21:08:59
 import pygame
 
 
@@ -38,3 +38,6 @@ class Ship():
 
     def blitme(self):
         self.screen.blit(self.image, self.rect)
+    def center_ship(self):
+        """让飞船在屏幕上􀨃中"""
+        self.center = self.screen_rect.centerx
